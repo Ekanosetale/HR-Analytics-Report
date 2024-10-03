@@ -11,6 +11,11 @@ This project delivers a data-driven overview of the organization’s HR landscap
 # Abstract 
 *This report analyzes HR analytics to uncover insights into employee satisfaction, retention, and compensation. Key findings reveal gender pay disparities, with male employees earning more than female counterparts, and highlight a correlation between job satisfaction and attrition rates. The report emphasizes the need for equitable compensation practices and improved work-life balance to enhance employee engagement. Recommendations are provided to address these issues, ultimately aiming to foster a fair and thriving workplace that supports both employee well-being and organizational success.*
 
+# Data Cleaning and Transformation
+
+The dataset was imported into Power BI as a CSV file and then loaded into Power Query for further processing. The dataset didn’t  need any cleaning as it was already clean. Several columns were renamed to better reflect the data they contained, and a calendar table was created using the following DAX expression:  
+Additionally, numerous measures were created to enable a comprehensive analysis. To keep the report concise, I won’t delve into the details of each measure, here are a few of them :
+
 # Tool used: 
 Power BI
 
