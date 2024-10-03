@@ -8,6 +8,9 @@ The primary objective of this analysis is to provide actionable insights into th
 
 This project delivers a data-driven overview of the organization’s HR landscape, equipping decision-makers with the insights needed to enhance overall employee experience and reduce turnover.
 
+# Abstract 
+*This report analyzes HR analytics to uncover insights into employee satisfaction, retention, and compensation. Key findings reveal gender pay disparities, with male employees earning more than female counterparts, and highlight a correlation between job satisfaction and attrition rates. The report emphasizes the need for equitable compensation practices and improved work-life balance to enhance employee engagement. Recommendations are provided to address these issues, ultimately aiming to foster a fair and thriving workplace that supports both employee well-being and organizational success.*
+
 # Tool used: 
 Power BI
 
@@ -45,7 +48,7 @@ Power BI
 
 -Identify the departments or job roles where retention is strongest or weakest, allowing for targeted interventions to improve workforce stability.
 
-# Discussion of Findings
+# Discussion of Insights
 
 ![](HRDashboard1.jpg)
 
