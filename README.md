@@ -8,6 +8,9 @@ The primary objective of this analysis is to provide actionable insights into th
 
 This project delivers a data-driven overview of the organization’s HR landscape, equipping decision-makers with the insights needed to enhance overall employee experience and reduce turnover.
 
+# Tool used: 
+Power BI
+
 # Objectives of the Analysis
 
 *Attrition and Termination Insights:*
