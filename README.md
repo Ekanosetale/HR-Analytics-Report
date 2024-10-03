@@ -42,6 +42,8 @@ This project delivers a data-driven overview of the organization’s HR landscap
 
 -Identify the departments or job roles where retention is strongest or weakest, allowing for targeted interventions to improve workforce stability.
 
+# Discussion of Findings
+
 ![](HRDashboard1.jpg)
 
 The termination rate (16%) is moderate but warrants attention to identify the underlying factors causing employees to leave. The 84% retention rate is generally positive but can be improved.
