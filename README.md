@@ -47,5 +47,5 @@ This project delivers a data-driven overview of the organization’s HR landscap
 
 ![](Complete HR Dashboard_page-0002.jpg)
 
-
+![](TS5.jpg)
 
