@@ -1,0 +1,77 @@
+---AverageTenureOfLeavers = 
+VAR Leavers = FILTER('Dataset','Dataset'[Attrition] = "Yes")
+RETURN 
+AVERAGEX(
+    Leavers, 
+    DATEDIFF('Dataset'[DateStart].[Date], 'Dataset'[DateDeparture].[Date], DAY) -- Using the AttritionDate column
+) / 365  -- Convert days to years
+
+  ----Female Staff = CALCULATE(COUNTROWS('Dataset'),'Dataset'[Gender]= "Female")
+
+  ----- Male Staff = CALCULATE(COUNTROWS('Dataset'),'Dataset'[Gender]= "Male")
+
+  ----- Retention Rate = 
+VAR retain = 
+           CALCULATE(
+           COUNTROWS('Dataset'), 
+           FILTER('Dataset', 'Dataset'[Attrition] = "No"))
+
+           VAR Totalemployee =  CALCULATE(COUNTA('Dataset'[Employe ID]))
+    
+         RETURN
+         DIVIDE(retain,Totalemployee, 0) 
+  
+  ----- Termination Rate = 
+VAR NumberWhoLeft = CALCULATE(
+    COUNTROWS('Dataset'), 
+    'Dataset'[Attrition] = "Yes"
+)
+VAR TotalEmployees = CALCULATE(COUNTROWS('Dataset'),'Dataset'[Employe ID])
+RETURN 
+DIVIDE(NumberWhoLeft, TotalEmployees, 0) 
+  
+  ----Total Attrition = 
+CALCULATE(
+    COUNTROWS('Dataset'), 
+    FILTER('Dataset','Dataset'[Attrition] = "Yes")
+  
+  ------ Total Current employee = CALCULATE(
+    COUNTROWS('Dataset'), 
+    'Dataset'[Attrition] = "No")
+  
+  -----Total Employees = CALCULATE(COUNTROWS('Dataset'),'Dataset'[Employe ID])
+  
+  ------- Total Salary = SUM('Dataset'[Salary] )
+
+  ------ Total Salary (in Thousands) = SUM('Dataset'[Salary]) / 1000
+
+  ------ Total Salary1 = SUM('Dataset'[Salary] )
+
+  ------- Total Termination = 
+CALCULATE(
+    COUNTROWS('Dataset'), 
+    'Dataset'[Attrition] = "Yes"
+
+  ------- Total Termination 01 = 
+CALCULATE(
+    COUNTROWS('Dataset'), 
+    'Dataset'[Attrition] = "Yes")
+
+  ------ Calendar = 
+VAR BaseCalendar = 
+    CALENDAR(MIN('Dataset'[DateStart].[Date]), MAX('Dataset'[DateStart].[Date]))
+RETURN
+ADDCOLUMNS(
+         BaseCalendar,
+         "Year", YEAR([Date]),
+         "Quarter", QUARTER([Date]),
+         "Month No", MONTH([Date]),
+         "Week Num", WEEKNUM([Date]),
+         "Week Day", WEEKDAY([Date]),
+         "Day", DAY([Date]),
+         "Month Name", FORMAT([Date], "MMM"),
+         "Month N", FORMAT([Date], "MM"),
+         "Week Day Name", FORMAT([Date], "ddd"),
+         "Week", FORMAT([Date], "dddd"),
+         "Quarter Number", "Q" & QUARTER([Date]),
+         "Year Month", FORMAT([Date], "YYYY MMMM"))
