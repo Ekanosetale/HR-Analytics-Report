@@ -13,23 +13,41 @@ This project delivers a data-driven overview of the organization’s HR landscap
 
 # An Overview of the Dataset
 The dataset contains HR  data with 38 columns and 1,470 rows., providing detailed information about employees. Here's an overview of the key columns:
+
 •	ID_employe: Unique identifier for each employee.
+
 •	Age: Employee's age.
+
 •	Attrition: Whether the employee has left the company (Yes/No).
+
 •	BusinessTravel: Frequency of business travel (e.g., Travel_Rarely, Travel_Frequently).
+
 •	Department: Employee's department (e.g., Research & Development, Sales).
+
 •	Education: Employee's education level.
+
 •	EnvironmentSatisfaction: Satisfaction with the work environment.
+
 •	Gender: Gender of the employee.
+
 •	JobInvolvement: Employee's level of job involvement.
+
 •	Job Role: Employee's specific role (e.g., Research Scientist, Sales Executive).
+
 •	JobSatisfaction: Satisfaction level with the job.
+
 •	PerformanceRating: Rating of the employee's performance.
+
 •	WorkLifeBalance: Balance between work and personal life.
+
 •	Salary: Employee's monthly salary.
+
 •	YearsAtCompany: Total years worked at the company.
+
 •	DateStart: Date when the employee started.
+
 •	DateDeparture: Date when the employee left (if applicable).
+
 •	EmploymentType: Full-time or Contractor status.
 
 # Data Cleaning and Transformation
