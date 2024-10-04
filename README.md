@@ -11,6 +11,27 @@ This project delivers a data-driven overview of the organization’s HR landscap
 # Abstract 
 *This report analyzes HR analytics to uncover insights into employee satisfaction, retention, and compensation. Key findings reveal gender pay disparities, with male employees earning more than female counterparts, and highlight a correlation between job satisfaction and attrition rates. The report emphasizes the need for equitable compensation practices and improved work-life balance to enhance employee engagement. Recommendations are provided to address these issues, ultimately aiming to foster a fair and thriving workplace that supports both employee well-being and organizational success.*
 
+# An Overview of the Dataset
+The dataset contains HR  data with 38 columns and 1,470 rows., providing detailed information about employees. Here's an overview of the key columns:
+•	ID_employe: Unique identifier for each employee.
+•	Age: Employee's age.
+•	Attrition: Whether the employee has left the company (Yes/No).
+•	BusinessTravel: Frequency of business travel (e.g., Travel_Rarely, Travel_Frequently).
+•	Department: Employee's department (e.g., Research & Development, Sales).
+•	Education: Employee's education level.
+•	EnvironmentSatisfaction: Satisfaction with the work environment.
+•	Gender: Gender of the employee.
+•	JobInvolvement: Employee's level of job involvement.
+•	Job Role: Employee's specific role (e.g., Research Scientist, Sales Executive).
+•	JobSatisfaction: Satisfaction level with the job.
+•	PerformanceRating: Rating of the employee's performance.
+•	WorkLifeBalance: Balance between work and personal life.
+•	Salary: Employee's monthly salary.
+•	YearsAtCompany: Total years worked at the company.
+•	DateStart: Date when the employee started.
+•	DateDeparture: Date when the employee left (if applicable).
+•	EmploymentType: Full-time or Contractor status.
+
 # Data Cleaning and Transformation
 
 The dataset was imported into Power BI as a CSV file and then loaded into Power Query for further processing. The dataset didn’t  need any cleaning as it was already clean. Several columns were renamed to better reflect the data they contained, and a calendar table was created using the following DAX expression:  
