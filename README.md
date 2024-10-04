@@ -14,7 +14,7 @@ This project delivers a data-driven overview of the organization’s HR landscap
 # Data Cleaning and Transformation
 
 The dataset was imported into Power BI as a CSV file and then loaded into Power Query for further processing. The dataset didn’t  need any cleaning as it was already clean. Several columns were renamed to better reflect the data they contained, and a calendar table was created using the following DAX expression:  
-Additionally, numerous measures were created to enable a comprehensive analysis. To keep the report concise, I won’t delve into the details of each measure, here are a few of them :
+Additionally, numerous measures were created to enable a comprehensive analysis. To keep the report concise, I won’t delve into the details of each measure, here are a few of them :![here](DAXCODE)
 
 # Tool used: 
 Power BI
